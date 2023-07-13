@@ -31,6 +31,7 @@ yt-scraper 默认为直接获取视频的上传日期、时长、视频标题、
 
 在实际使用时，我们可能需要对获取的数据进行筛选和重组，由于频道或播放列表的内容差异，如果您有定制内容的需求，可能需要自己对脚本进行修改，以便只提取对您有用的数据进行保存。
 <br>
+<br>
 
 # yt-scraper
 yt-scraper allows you to download video information and cover images from YouTube. yt-scraper uses the yt-dlp and jq tools to obtain video data from a specified YouTube channel or playlist, including the upload date, duration, video title, video description, and cover image of all videos in the channel or playlist. yt-scraper records the video IDs that have been saved, so it can also be used to subscribe to channels or playlists. By running yt-scraper regularly, you can track and download updated video data.
