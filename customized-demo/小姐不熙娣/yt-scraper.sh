@@ -170,6 +170,7 @@ while read id; do
 
     topic=$(echo "$description" | grep -oE '主題：.*' | sed 's/主題：//')
     description=$(echo "$description" | awk '{gsub(/敬請鎖定晚間10點《小姐不熙娣》！|請鎖定晚間10點《小姐不熙娣》！/, ""); print}')
+    description=$(echo "$description" | sed 's/想知道.*//')
     description=$(echo "$description" | awk -v RS='\n\n' 'NR==3' | sed '/^\s*$/d' | tr -d '\n')
 
     episode_number=$(echo "$title" | grep -oE 'EP[0-9]+')
